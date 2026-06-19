@@ -2,7 +2,7 @@
 
 **Embedded Systems & IoT Engineer** | VIT | Building real-time systems for autonomous driving & industrial IoT
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush-blue?logo=linkedin)](www.linkedin.com/in/aarush-jagannathan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush-blue?logo=linkedin)](https://www.linkedin.com/in/aarush-jagannathan)
 [![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FResume-green)](https://itzgolly.github.io/Resume/)
 [![Email](https://img.shields.io/badge/Email-aarushjagannathan%40gmail.com-red)](mailto:aarushjagannathan@gmail.com)
 
