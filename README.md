@@ -85,7 +85,7 @@ Designed a sub-₹500 energy monitoring solution using ESP32 and current transfo
 - **Deliverable**: Deployable system reading 9 electrical parameters with real-time Zoho IoT dashboard
 
 ### **Supplier Quality & Digitalization Intern** — Daimler India Commercial Vehicles (DICV) — Mercedes-Benz Commercial Vehicles
-*[Add duration] | Qprime Team — Supplier Quality Management*
+*2-Month Internship | Qprime Team — Supplier Quality Management*
 
 - Worked with real-time supplier data and handled supplier-side quality issues as part of the Qprime team
 - Led a digitalization initiative on the supplier side, identifying opportunities to advance IoT-based data collection and reporting for MSME suppliers
