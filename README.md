@@ -3,7 +3,7 @@
 **Edge AI Systems Engineer | Embedded Software Engineer** | VIT | Building edge AI systems, real-time perception pipelines, and industrial IoT networks
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush-blue?logo=linkedin)](https://www.linkedin.com/in/aarush-jagannathan)
-[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FResume-green)](https://itzgolly.github.io/Portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FPortfolio-green)](https://itzgolly.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/Email-aarushjagannathan%40gmail.com-red)](mailto:aarushjagannathan@gmail.com)
 
 ---
