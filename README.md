@@ -3,7 +3,7 @@
 **Edge AI Systems Engineer | Embedded Software Engineer** | VIT | Building edge AI systems, real-time perception pipelines, and industrial IoT networks
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush-blue?logo=linkedin)](https://www.linkedin.com/in/aarush-jagannathan)
-[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FResume-green)](https://itzgolly.github.io/Resume/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FResume-green)](https://itzgolly.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/Email-aarushjagannathan%40gmail.com-red)](mailto:aarushjagannathan@gmail.com)
 
 ---
@@ -123,7 +123,7 @@ Designed a sub-₹500 energy monitoring solution using ESP32 and current transfo
 
 I'm actively seeking roles in **Edge AI Systems**, **Embedded Software/Systems**, **Computer Vision**, and **IoT/IIoT** at companies building real-world hardware.
 
-- **Portfolio**: [itzgolly.github.io/Resume](https://itzgolly.github.io/Resume/)
+- **Portfolio**: [itzgolly.github.io/Resume](https://itzgolly.github.io/Portfolio/)
 - **LinkedIn**: [www.linkedin.com/in/aarush-jagannathan]
 - **Email**: [aarushjagannathan@gmail.com](aarushjagannathan@gmail.com)
 
