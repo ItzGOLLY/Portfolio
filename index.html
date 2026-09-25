@@ -3,231 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarush — Embedded Systems & Edge AI Engineer</title>
+    <title>Aarush Jagannathan — Embedded IoT, Digitalisation &amp; Backend Systems</title>
+    <meta name="description" content="Final-year Electronics and Computer Engineering student at VIT Chennai. Internships at Daimler Truck (supplier digitalisation, Power BI) and Zoho Corporation (ESP32 industrial IoT gateway, Modbus RTU, MQTT over TLS). Builder of ServiceDesk AI, a deployed multi-channel support platform.">
+    <meta name="author" content="Aarush Jagannathan">
+    <meta name="theme-color" content="#0a1018">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aarush Jagannathan — Embedded IoT, Digitalisation &amp; Backend Systems">
+    <meta property="og:description" content="Daimler Truck · Zoho Corporation · VIT Chennai 2027. Industrial digitalisation and data analytics, embedded IoT firmware, and backend systems.">
+    <meta property="og:image" content="profile-hero.jpg">
+    <meta property="og:url" content="https://itzgolly.github.io/Portfolio/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230d1421'/><text y='.9em' x='50%25' text-anchor='middle' font-size='62' font-family='Inter,sans-serif' font-weight='700' fill='%23c09866'>A</text></svg>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Aarush<span>.</span></a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+            </nav>
+            <a href="#contact" class="nav-cta">Get in touch</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
     <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
+    <section class="hero" id="top">
+        <div class="hero-content reveal">
             <p class="greeting">Hello, I'm</p>
-            <h1>Aarush</h1>
-            <h2>Embedded Systems & Edge AI Engineer & IoT Engineer</h2>
-            <p class="tagline">Building edge AI systems, real-time perception pipelines, and industrial IoT networks — from bare metal to on-device intelligence</p>
+            <h1>Aarush Jagannathan</h1>
+            <h2>Embedded IoT · Industrial Digitalisation · Backend Systems</h2>
+            <p class="tagline">
+                Final-year Electronics and Computer Engineering student at VIT Chennai. I've decoded
+                a Modbus register map on real industrial hardware at Zoho, tracked a
+                <em>107-supplier</em> digitalisation rollout at Daimler Truck, and shipped a
+                multi-channel support platform that's live in production.
+            </p>
+
+            <ul class="hero-proof">
+                <li>
+                    <strong>Daimler Truck</strong>
+                    <span>107-supplier rollout, Power BI</span>
+                </li>
+                <li>
+                    <strong>Zoho Corporation</strong>
+                    <span>ESP32 ↔ Modbus RTU gateway</span>
+                </li>
+                <li>
+                    <strong>ServiceDesk AI</strong>
+                    <span>Deployed and running live</span>
+                </li>
+            </ul>
+
             <div class="hero-links">
-                <a href="https://github.com/itzgolly" target="_blank" class="btn-primary">GitHub</a>
-                <a href="https://www.linkedin.com/in/aarush-jagannathan" target="_blank" class="btn-primary">LinkedIn</a>
-                <a href="mailto:aarushjagannathan@gmail.com" class="btn-primary">Email</a>
+                <a href="#projects" class="btn btn-primary">View my work</a>
+                <a href="Aarush_Jagannathan_Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Resume (PDF)</a>
+            </div>
+
+            <div class="hero-social">
+                <a href="https://github.com/ItzGOLLY" target="_blank" rel="noopener">GitHub</a>
+                <span class="dot"></span>
+                <a href="https://www.linkedin.com/in/aarush-jagannathan" target="_blank" rel="noopener">LinkedIn</a>
+                <span class="dot"></span>
+                <a href="mailto:aarushjagannathan@gmail.com">Email</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="profile-hero.png" alt="Aarush">
+
+        <div class="hero-image reveal">
+            <div class="hero-image-frame">
+                <img src="profile-hero.jpg" alt="Portrait of Aarush Jagannathan" width="900" height="900" fetchpriority="high">
+            </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
-        <div class="about-image">
-            <img src="profile-about.png" alt="About Aarush">
+    <section class="about" id="about">
+        <div class="about-image reveal">
+            <div class="about-image-frame">
+                <img src="profile-about.jpg" alt="Aarush Jagannathan working at a desk" width="1200" height="900" loading="lazy">
+            </div>
         </div>
-        <div class="about-content">
+        <div class="about-content reveal">
+            <p class="eyebrow">Get to know me</p>
             <h2>Who am I?</h2>
-            <p>I'm an engineering student focused on edge AI systems and embedded software — building real-time, resource-constrained applications that bridge sensors, industrial protocols like Modbus RTU, and on-device intelligence. My project work spans embedded firmware, computer vision / perception pipelines, and industrial IoT data systems.</p>
-            <p>With hands-on embedded hardware experience, a computer vision project taken from raw sensor data to model design, and supplier-facing IIoT project experience from DICV, I thrive at the intersection of embedded systems, edge intelligence, and industrial connectivity.</p>
+            <p>
+                I'm a final-year Electronics and Computer Engineering student at
+                <strong>VIT Chennai</strong>, graduating in 2027. My work sits across three
+                areas that keep turning out to be the same problem: getting reliable data out of
+                something, and making it useful to the people who have to act on it.
+            </p>
+            <p>
+                At <strong>Zoho</strong> that meant firmware. I built an ESP32 gateway that talks
+                to a Schneider EM6400NG three-phase energy meter over Modbus RTU on RS485 —
+                decoding the holding-register map by hand to pull voltage, current, power, power
+                factor and frequency, then publishing to Zoho IoT Cloud over MQTT with TLS.
+            </p>
+            <p>
+                At <strong>Daimler Truck</strong> it meant the plant floor and the spreadsheet.
+                I tracked a 10-stage data-implementation rollout across 107 suppliers, built the
+                Power BI dashboard the Supplier Quality Development team ran it from, and wrote
+                the Supplier Digitalisation Handbook I later presented at the Qprime supplier
+                conclave.
+            </p>
+            <p>
+                And in <strong>ServiceDesk AI</strong> it meant the backend — REST APIs, JWT auth,
+                PostgreSQL, a WhatsApp intake channel and an AI layer built to degrade gracefully
+                when the model API isn't there. Currently deepening my Python and DSA
+                fundamentals alongside all of it.
+            </p>
+
             <div class="contact-info">
-                <div><span class="label">Email:</span><span class="value"> aarushjagannathan@gmail.com</span></div>
-                <div><span class="label">Degree:</span><span class="value"> B.Tech (Electronics and Computer Engineering)</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3>⚡ IoT-Based Energy Monitoring System</h3>
-            <p class="project-company">Zoho Corporation — 2 Month Internship</p>
-            <p class="project-desc">Industrial-grade energy monitoring using Modbus RTU over RS485 and MQTT over TLS. ESP32 gateway reads Schneider Conzerv EM6400NG 3-phase energy meter and publishes live data to Zoho IoT Cloud with real-time dashboard, configurable alarm rules, and remote diagnostics.</p>
-            <div class="project-tags">
-                <span class="tag">ESP32</span>
-                <span class="tag">Modbus RTU</span>
-                <span class="tag">RS485</span>
-                <span class="tag">Embedded Software</span>
-                <span class="tag">IIoT</span>
-                <span class="tag">MQTT/TLS</span>
-                <span class="tag">C++</span>
-                <span class="tag">Zoho IoT SDK</span>
-            </div>
-            <a href="https://github.com/ItzGOLLY/Iot-Energy-Monitor" target="_blank" class="project-link">View on GitHub →</a>
-            <a href="https://docs.google.com/document/d/19TV8WA1hZVvs-2u6Xn39ovXQFx2YdNAiTbBEY5zS0iw/edit?usp=sharing" target="_blank" class="project-link">View Documentation →</a>
-        </div>
-
-        <div class="project-card">
-            <h3>🔧 Low-Cost Energy Meter</h3>
-            <p class="project-company">Personal Project</p>
-            <p class="project-desc">Cost-optimized energy monitoring solution for Indian market. Low cost hardware design with ESP32 and current transformers, maintaining accuracy without expensive components.</p>
-            <div class="project-tags">
-                <span class="tag">ESP32</span>
-                <span class="tag">Edge AI</span>
-                <span class="tag">Predictive Maintenance</span>
-                <span class="tag">Hardware Design</span>
-                <span class="tag">AI-Based Data Analysis</span>
-                <span class="tag">Cost Optimization</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3>🚗 IMU-Conditioned Diffusion for 3D Perception</h3>
-            <p class="project-company">Research Project — Patent Pending</p>
-            <p class="project-desc">Real-time dense 3D point cloud generation from single-plane LiDAR using conditional diffusion models. Optimized with CUDA and TensorRT for NVIDIA Jetson Orin NX deployment in autonomous vehicles.</p>
-            <div class="project-tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">Diffusion Model</span>
-                <span class="tag">TensorRT</span>
-                <span class="tag">Computer Vision</span>
-                <span class="tag">LiDAR</span>
+                <div><span class="label">Focus</span><span class="value">Embedded IoT · digitalisation &amp; analytics · backend</span></div>
+                <div><span class="label">Degree</span><span class="value">B.Tech Electronics &amp; Computer Engineering, VIT Chennai — 2023–2027</span></div>
+                <div><span class="label">Based in</span><span class="value">Chennai, Tamil Nadu, India</span></div>
+                <div><span class="label">Email</span><span class="value"><a href="mailto:aarushjagannathan@gmail.com">aarushjagannathan@gmail.com</a></span></div>
             </div>
         </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="experience">
-        <h2 class="section-title">My Journey</h2>
+    <section class="experience" id="experience">
+        <div class="section-head reveal">
+            <p class="eyebrow">My journey</p>
+            <h2 class="section-title">Experience</h2>
+        </div>
         <div class="timeline">
-            <div class="timeline-item">
-                <h3>IoT Intern</h3>
+            <div class="timeline-item reveal">
+                <div class="timeline-top">
+                    <h3>Digitalisation Intern — Supplier Quality Development</h3>
+                    <span class="period">Jun – Aug 2026</span>
+                </div>
+                <p class="company">Daimler India Commercial Vehicles (Daimler Truck AG)</p>
+                <p class="team">Oragadam Plant, Chennai</p>
+                <ul>
+                    <li>Tracked a 10-stage real-time data implementation rollout across 107 suppliers, and built the Power BI dashboard the Supplier Quality Development team used to run and report it</li>
+                    <li>Designed a Digital Transformation Priority Checklist scoring suppliers on 5 criteria mapped to 6 priority tiers, weighting cost and ROI highest based on research into Indian MSME capital constraints</li>
+                    <li>Authored a Supplier Digitalisation Handbook and presented it at the Qprime supplier development conclave to an external supplier audience</li>
+                    <li>Converted handwritten supplier submissions into structured datasets; delivered a 5-tab Excel priority-matrix workbook and a supplier-facing HTML scoring tool</li>
+                </ul>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Advanced Excel</span>
+                    <span class="tag">Data Structuring</span>
+                    <span class="tag">Process Mapping</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-top">
+                    <h3>IoT Engineering Intern</h3>
+                    <span class="period">May – Jul 2025</span>
+                </div>
                 <p class="company">Zoho Corporation</p>
+                <p class="team">Chennai, Tamil Nadu</p>
                 <ul>
-                    <li>Built production ESP32 gateway for industrial energy meter data transmission to Zoho IoT Cloud</li>
-                    <li>Implemented Modbus RTU over RS485 and MQTT over TLS with certificate pinning</li>
-                    <li>Designed captive portal (WiFiManager) for zero-touch device provisioning</li>
-                    <li>Created real-time dashboard with 9 electrical parameters and configurable alarm rules</li>
+                    <li>Built an ESP32-based industrial IoT gateway reading a Schneider EM6400NG three-phase energy meter over Modbus RTU on RS485 (9600 baud, 8N1), publishing 9 electrical parameters every 5 seconds to Zoho IoT Cloud over MQTT with TLS</li>
+                    <li>Decoded the meter's Modbus holding-register map to extract voltage, current, active/reactive/apparent power, power factor and frequency; configured 32 device datapoints cloud-side</li>
+                    <li>Implemented Wi-Fi provisioning via a captive-portal access point so a field installer can commission the device from a phone with no laptop and no reflash; credentials persist in ESP32 NVS</li>
+                    <li>Secured the cloud connection with an embedded root CA certificate</li>
                 </ul>
+                <div class="project-tags">
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Modbus RTU / RS485</span>
+                    <span class="tag">MQTT over TLS</span>
+                    <span class="tag">Embedded C/C++</span>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>Supplier Quality & Digitalization Intern</h3>
-                <p class="company">Daimler India Commercial Vehicles (DICV) — Mercedes-Benz Commercial Vehicles</p>
-                <ul>
-                    <li>Led a digitalization initiative on the supplier side, identifying opportunities to advance IoT-based data collection and reporting for MSME suppliers</li>
-                    <li>Part of the Qprime team (Supplier Quality Management), working with real-time supplier data and handling supplier-side quality issues</li>
-                    <li>Designed a supplier prioritization framework and evaluation toolkit to guide digitalization investment decisions, weighted around mutual OEM–supplier benefit and cost/ROI realities for Indian MSMEs</li>
-                    <li>Directly engaged and coordinated with external suppliers on quality data and issue resolution, acting as a technical liaison between DICV and supplier organizations</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="section-head reveal">
+            <p class="eyebrow">My work</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-sub">
+                Three systems, three layers — a deployed cloud platform, industrial firmware on
+                real metering hardware, and silicon-level design.
+            </p>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-head">
+                <div>
+                    <h3>ServiceDesk AI</h3>
+                    <p class="project-company">Multi-Channel Customer Support Platform</p>
+                </div>
+                <span class="status status-live">Live</span>
             </div>
-            <div class="timeline-item">
-                <h3>Core Team Member</h3>
-                <p class="company">Pop Culture Club, VIT</p>
-                <ul>
-                    <li>Organizing and managing club events and activities</li>
-                    <li>Collaborating with team members for successful event execution</li>
-                </ul>
+            <p class="project-meta">TypeScript · Express · PostgreSQL 16 + pgvector · React · Docker</p>
+            <p class="project-desc">
+                A cloud-native support platform for small businesses: every complaint — web or
+                WhatsApp — becomes a tracked ticket with an owner, a priority and a status, with
+                an AI layer that assists the agent rather than deciding for them.
+            </p>
+            <ul class="project-points">
+                <li>Backend exposing ~45 REST endpoints with JWT authentication (bcrypt, httpOnly refresh-token cookies), role-based plus record-ownership authorisation, and schema-level request validation</li>
+                <li>PostgreSQL 16 data model with referential constraints, indexes and GIN full-text search; 161 automated tests run against a real PostgreSQL instance using production migrations</li>
+                <li>Two-way WhatsApp intake through Meta's WhatsApp Cloud API, with HMAC signature verification and database-level webhook idempotency so provider retries cannot duplicate tickets</li>
+                <li>AI classification, summaries and draft replies sit behind a provider abstraction with a deterministic rule-based fallback — if the model API is down, every core workflow still works</li>
+                <li>Knowledge-base RAG: articles chunked, embedded and retrieved by cosine similarity over an HNSW index, answered with citations</li>
+            </ul>
+            <p class="project-context">
+                BCSE408L Cloud Computing, VIT Chennai · two-person team · deployed on Vercel and Render
+            </p>
+            <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">JWT / RBAC</span>
+                <span class="tag">Docker</span>
+                <span class="tag">WhatsApp Cloud API</span>
+            </div>
+            <div class="project-links">
+                <a href="https://servicedesk-ai-two.vercel.app" target="_blank" rel="noopener" class="project-link">Open the live app →</a>
+                <a href="https://servicedesk-api-ss2d.onrender.com/api/docs" target="_blank" rel="noopener" class="project-link">API docs (Swagger) →</a>
+                <a href="https://github.com/ItzGOLLY/servicedesk-ai" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-head">
+                <div>
+                    <h3>Industrial IoT Energy Monitoring Gateway</h3>
+                    <p class="project-company">Zoho Corporation — IoT Engineering Internship</p>
+                </div>
+                <span class="status status-shipped">Shipped</span>
+            </div>
+            <p class="project-meta">ESP32 · Modbus RTU over RS485 · MQTT over TLS · C / C++</p>
+            <p class="project-desc">
+                An ESP32 gateway that reads a Schneider EM6400NG three-phase energy meter over
+                Modbus RTU on RS485 (9600 baud, 8N1) and publishes 9 electrical parameters every
+                5 seconds to Zoho IoT Cloud over MQTT with TLS.
+            </p>
+            <ul class="project-points">
+                <li>Decoded the meter's Modbus holding-register map to extract voltage, current, active/reactive/apparent power, power factor and frequency; configured 32 device datapoints cloud-side</li>
+                <li>Wi-Fi provisioning through a captive-portal access point, so a field installer can commission the device from a phone with no laptop and no reflash; credentials persist in ESP32 NVS</li>
+                <li>Secured the cloud connection with an embedded root CA certificate</li>
+                <li>Stack: C / C++ (Arduino IDE), ModbusMaster, WiFiManager, Zoho IoT SDK, Preferences / NVS</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">ESP32</span>
+                <span class="tag">Modbus RTU</span>
+                <span class="tag">RS485</span>
+                <span class="tag">MQTT over TLS</span>
+                <span class="tag">Embedded C/C++</span>
+                <span class="tag">Zoho IoT SDK</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ItzGOLLY/Iot-Energy-Monitor" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                <a href="https://docs.google.com/document/d/19TV8WA1hZVvs-2u6Xn39ovXQFx2YdNAiTbBEY5zS0iw/edit?usp=sharing" target="_blank" rel="noopener" class="project-link">View documentation →</a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-head">
+                <div>
+                    <h3>Ultra-Low-Power 10-bit SAR ADC</h3>
+                    <p class="project-company">VLSI Project-I · 180 nm CMOS</p>
+                </div>
+                <span class="status status-dev">Review-I cleared</span>
+            </div>
+            <p class="project-meta">Cadence Virtuoso / Spectre · Mixed-Signal Design · 2026</p>
+            <p class="project-desc">
+                A comparative study of capacitive-DAC switching schemes for a successive-approximation
+                ADC — the acquisition stage every low-power sensing system depends on, and the one
+                that usually decides its energy budget.
+            </p>
+            <ul class="project-points">
+                <li>Switching-energy comparison of four capacitive-DAC schemes — conventional, monotonic, Vcm-based and merge-and-split — on a single testbench, benchmarked in normalised CV²<sub>ref</sub></li>
+                <li>Literature survey across 20+ IEEE / JSSC papers to select a fabricated 7.6 nW, 1 kS/s reference design as the comparison baseline</li>
+                <li>Evaluating against INL/DNL, ENOB and the Walden Figure of Merit</li>
+            </ul>
+            <p class="project-context">Review-I cleared September 2026 · ongoing through Project-II</p>
+            <div class="project-tags">
+                <span class="tag">VLSI</span>
+                <span class="tag">Cadence Virtuoso</span>
+                <span class="tag">Spectre</span>
+                <span class="tag">Mixed-Signal</span>
+                <span class="tag">Low Power</span>
             </div>
         </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h4>Embedded & Hardware</h4>
-                <p>ESP32, STM32, Arduino, Raspberry Pi, Modbus RTU/TCP, RS485, UART, SPI, I2C</p>
-            </div>
-            <div class="skill-card">
-                <h4>Edge AI & ML</h4>
-                <p>TensorRT, PyTorch, Python, Computer Vision, Point Cloud Processing</p>
-            </div>
-            <div class="skill-card">
-                <h4>IoT & Cloud</h4>
-                <p>MQTT, HTTP/REST, WebSocket, Zoho IoT, IIoT, ModBus</p>
-            </div>
-            <div class="skill-card">
-                <h4>Software</h4>
-                <p>C, C++, Python, JavaScript/TypeScript(Basic), Git, Docker, PowerBI, Excel</p>
-            </div>
+    <section class="skills" id="skills">
+        <div class="section-head reveal">
+            <p class="eyebrow">Expertise</p>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-sub">
+                What I've actually built with, across firmware, data and the backend.
+            </p>
         </div>
-        <div class="extra-skills">
-            <h4>Additional Competencies</h4>
-            <div class="extra-tags">
-                <span class="tag">Data Analysis</span>
-                <span class="tag">Problem Solving</span>
-                <span class="tag">Project Management</span>
-                <span class="tag">Research</span>
-                <span class="tag">Team Collaboration</span>
-                <span class="tag">Technical Documentation</span>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <h4>Languages</h4>
+                <p>Python, C, C++, SQL, TypeScript</p>
+            </div>
+            <div class="skill-card reveal">
+                <h4>Data &amp; Analytics</h4>
+                <p>Power BI, Advanced Excel (pivot models, weighted scoring matrices), data cleaning and structuring, dashboard design, KPI tracking</p>
+            </div>
+            <div class="skill-card reveal">
+                <h4>Backend &amp; Databases</h4>
+                <p>REST API design, Node.js / Express, PostgreSQL, JWT authentication, role-based access control, schema design, indexing, integration testing</p>
+            </div>
+            <div class="skill-card reveal">
+                <h4>Embedded &amp; IoT</h4>
+                <p>ESP32 / ESP32-S3, Modbus RTU over RS485, MQTT over TLS, UART / Serial, sensor integration, industrial energy metering, Arduino IDE</p>
+            </div>
+            <div class="skill-card reveal">
+                <h4>Tools &amp; Methods</h4>
+                <p>Git &amp; GitHub, Linux, Postman, Cadence Virtuoso / Spectre, process mapping, requirement gathering, technical documentation</p>
+            </div>
+            <div class="skill-card reveal">
+                <h4>Coursework</h4>
+                <p>Data Structures &amp; Algorithms, DBMS, Operating Systems, Computer Networks, Object-Oriented Programming, Microcontrollers (8051), VLSI Design, Internet of Things</p>
             </div>
         </div>
     </section>
 
     <!-- EDUCATION -->
-    <section class="education">
-        <h2 class="section-title">Academic Background</h2>
+    <section class="education" id="education">
+        <div class="section-head reveal">
+            <p class="eyebrow">Academic background</p>
+            <h2 class="section-title">Education</h2>
+        </div>
         <div class="edu-grid">
-            <div class="edu-card" onclick="this.classList.toggle('flipped')">
+            <div class="edu-card reveal" tabindex="0" role="button" aria-label="B.Tech card, activate to see achievements">
                 <div class="edu-front">
-                    <h3>B.Tech in Computer Science</h3>
-                    <p class="school">Vellore Institute of Technology (VIT)</p>
-                    <p class="detail">Electronics and Computer Engineering (ECM)</p>
-                    <p class="CGPA">7.91</p>
+                    <h3>B.Tech, Electronics &amp; Computer Engineering</h3>
+                    <p class="school">Vellore Institute of Technology, Chennai</p>
+                    <p class="detail">2023 – 2027</p>
+                    <p class="score">7.91 <span>CGPA</span></p>
                     <span class="flip-hint">Click to see achievements</span>
                 </div>
                 <div class="edu-back">
-                    <h4>Key Achievements</h4>
+                    <h4>Highlights</h4>
                     <ul>
-                        <li>Core Team Member of Pop Culture Club</li>
-                        <li>Active participant in technical events</li>
-                        <li>Strong academic performance</li>
+                        <li>Authored and presented the Supplier Digitalisation Handbook at Daimler Truck's Qprime supplier conclave, 2026</li>
+                        <li>Two industry internships completed alongside the degree — Daimler Truck and Zoho Corporation</li>
+                        <li>No standing arrears</li>
                     </ul>
                     <span class="flip-hint">Click to flip back</span>
                 </div>
             </div>
-            <div class="edu-card" onclick="this.classList.toggle('flipped')">
+
+            <div class="edu-card reveal" tabindex="0" role="button" aria-label="Class 12 card, activate to see achievements">
                 <div class="edu-front">
-                    <h3>12th Grade (Senior Secondary)</h3>
-                    <p class="school">Sri Chaitanya Techno School Perumbakkam</p>
-                    <p class="Percentage">89%</p>
+                    <h3>Class XII (Senior Secondary)</h3>
+                    <p class="school">Sri Chaitanya Techno School, Perumbakkam</p>
+                    <p class="detail">2023</p>
+                    <p class="score">89<span>%</span></p>
                     <span class="flip-hint">Click to see achievements</span>
                 </div>
                 <div class="edu-back">
-                    <h4>Key Achievements</h4>
+                    <h4>Highlights</h4>
                     <ul>
-                        <li>Strong foundation in Physics and Chemistry</li>
-                        <li>Active participation in science exhibitions</li>
+                        <li>Physics, Chemistry, Mathematics stream</li>
+                        <li>Strong foundation in mathematics and applied physics</li>
                     </ul>
                     <span class="flip-hint">Click to flip back</span>
                 </div>
             </div>
-            <div class="edu-card" onclick="this.classList.toggle('flipped')">
+
+            <div class="edu-card reveal" tabindex="0" role="button" aria-label="Class 10 card, activate to see achievements">
                 <div class="edu-front">
-                    <h3>10th Grade (Secondary)</h3>
-                    <p class="school">Sri Chaitanya Techno School Perumbakkam</p>
-                    <p class="Percentage">90%</p>
+                    <h3>Class X (Secondary)</h3>
+                    <p class="school">Sri Chaitanya Techno School, Perumbakkam</p>
+                    <p class="detail">2021</p>
+                    <p class="score">90<span>%</span></p>
                     <span class="flip-hint">Click to see achievements</span>
                 </div>
                 <div class="edu-back">
-                    <h4>Key Achievements</h4>
+                    <h4>Highlights</h4>
                     <ul>
-                        <li>Developed strong analytical skills</li>
-                        <li>Participated in various extracurricular activities</li>
+                        <li>Consistently high academic performance</li>
+                        <li>Developed strong analytical foundations</li>
                     </ul>
                     <span class="flip-hint">Click to flip back</span>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer class="contact">
-        <h2>Let's Talk</h2>
-        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-        <p class="email">aaruhsjagannathan@gmail.com</p>
-        <div class="footer-links">
-            <a href="https://github.com/itzgolly">GitHub</a>
-            <a href="https://www.linkedin.com/in/aarush-jagannathan" target="_blank">LinkedIn</a>
+    <footer class="contact" id="contact">
+        <div class="reveal">
+            <p class="eyebrow">Get in touch</p>
+            <h2>Let's talk</h2>
+            <p class="contact-lead">
+                I'm looking for graduate roles starting 2027 — embedded and IoT, core and
+                automotive engineering, data and digitalisation, or backend development. Happy to
+                relocate, and happy to talk through any of the work above in detail.
+            </p>
+            <a class="email" href="mailto:aarushjagannathan@gmail.com">aarushjagannathan@gmail.com</a>
+            <div class="footer-links">
+                <a href="https://github.com/ItzGOLLY" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/aarush-jagannathan" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="Aarush_Jagannathan_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+            <p class="copyright">© 2026 Aarush Jagannathan · Chennai, India</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,103 +1,120 @@
 # 👋 Hey, I'm Aarush
 
-**Edge AI Systems Engineer | Embedded Software Engineer** | VIT | Building edge AI systems, real-time perception pipelines, and industrial IoT networks
+**Embedded IoT · Industrial Digitalisation · Backend Systems** | B.Tech ECE, VIT Chennai '27
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FPortfolio-c09866)](https://itzgolly.github.io/Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush-blue?logo=linkedin)](https://www.linkedin.com/in/aarush-jagannathan)
-[![Portfolio](https://img.shields.io/badge/Portfolio-itzgolly.github.io%2FPortfolio-green)](https://itzgolly.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/Email-aarushjagannathan%40gmail.com-red)](mailto:aarushjagannathan@gmail.com)
 
 ---
 
 ## 🎯 What I Do
 
-I build **edge AI and embedded systems** — from sensor acquisition and real-time processing to on-device intelligence and cloud dashboards. My work spans industrial IoT, computer vision / perception pipelines, and energy management systems.
+Final-year Electronics and Computer Engineering student with industry internships at
+**Daimler Truck** and **Zoho Corporation**. My work spans three areas that keep turning out to
+be the same problem — getting reliable data out of something, and making it useful to whoever
+has to act on it:
 
-**Core Competencies:**
-- ⚡ **Embedded C/C++** — ESP32, STM32, Raspberry Pi
-- 📡 **Communication Protocols** — Modbus RTU/TCP, MQTT, RS485, UART, SPI, I2C
-- 🎯 **Computer Vision & Perception** — LiDAR point cloud processing, 2D-to-3D reconstruction (in progress)
-- 🌐 **IoT & Cloud** — Zoho IoT, AWS IoT Core, real-time dashboards, alarm systems
-- 🤖 **Edge AI** — Conditional point diffusion models for 3D point cloud generation (software stage, ongoing)
-- 🏭 **Industrial Digitalization** — Supplier-side IoT and data digitalization (DICV)
+- 🏭 **Manufacturing digitalisation & data analytics** — Power BI, SQL, Advanced Excel, process mapping
+- ⚡ **Embedded IoT firmware** — ESP32, Modbus RTU over RS485, MQTT over TLS
+- 🧩 **Backend systems** — TypeScript, Express, PostgreSQL, REST API design
+- 🔬 **Mixed-signal design** — 180 nm CMOS SAR ADC in Cadence Virtuoso / Spectre
 
 ---
 
 ## 🔥 Featured Projects
 
-### ⚡ [IoT Energy Monitoring System](https://github.com/itzgolly/iot-energy-monitor)
-**Zoho Corporation — Internship Project (2 Months)**
+### 🧩 [ServiceDesk AI](https://github.com/ItzGOLLY/servicedesk-ai) — Multi-Channel Support Platform
+**TypeScript · Express · PostgreSQL 16 + pgvector · React · Docker · Deployed and live**
 
-Industrial-grade energy monitoring using **Modbus RTU over RS485** and **MQTT over TLS**.
+A cloud-native customer support platform for small businesses. Every complaint — web or
+WhatsApp — becomes a tracked ticket with an owner, a priority and a status.
 
-- **Hardware**: ESP32 gateway + Schneider Conzerv EM6400NG 3-phase energy meter
-- **Stack**: C++, Arduino, Zoho IoT SDK, WiFiManager, ModbusMaster
-- **Impact**: Real-time cloud dashboard with 9 electrical parameters, configurable alarm rules, remote diagnostics
-- **Key Features**: Captive portal config, non-volatile credential storage, auto-recovery, TLS-secured MQTT
+- **~45 REST endpoints** with JWT authentication (bcrypt, httpOnly refresh-token cookies), role-based plus record-ownership authorisation, and schema-level request validation
+- **PostgreSQL 16** data model with referential constraints, indexes and GIN full-text search; **161 automated tests** run against a real PostgreSQL using production migrations
+- **Two-way WhatsApp intake** via Meta's WhatsApp Cloud API, with HMAC signature verification and database-level webhook idempotency — provider retries cannot duplicate tickets
+- **AI that degrades gracefully** — classification, summaries and draft replies sit behind a provider abstraction with a deterministic rule-based fallback, so no core workflow depends on the model API
+- **Knowledge-base RAG** — articles chunked, embedded and retrieved by cosine similarity over an HNSW index, answered with citations
 
-> **Recruiter Note**: This project demonstrates a full IoT pipeline — from industrial sensor communication to secure cloud analytics. Built during my internship at Zoho.
+🔗 [Live app](https://servicedesk-ai-two.vercel.app) · [API docs (Swagger)](https://servicedesk-api-ss2d.onrender.com/api/docs)
 
----
-
-### 🎯 [IMU-Conditioned 3D Point Cloud Generation](https://github.com/itzgolly/conditional-point-diffusion)
-**Ongoing Project — Computer Vision / Edge AI**
-
-Conditional point diffusion model for converting single-plane 2D LiDAR scans into dense 3D point clouds.
-
-- **Stack**: Python, PyTorch
-- **Focus**: Model design, training, and validation of the 2D-to-3D reconstruction pipeline
-- **Status**: Software pipeline in progress. Edge deployment (Jetson hardware, CUDA/TensorRT optimization) is a planned next step and has **not** been implemented yet.
+> BCSE408L Cloud Computing, VIT Chennai · two-person team · deployed on Vercel and Render.
 
 ---
 
-### 📊 [Low-Cost Smart Energy Meter](https://github.com/itzgolly/low-cost-energy-meter)
-**Cost-Optimized IoT Hardware for Indian Market, with Predictive Maintenance**
+### ⚡ [IoT Energy Monitoring System](https://github.com/ItzGOLLY/Iot-Energy-Monitor)
+**Zoho Corporation — Internship Project · Shipped**
 
-Designed a sub-₹500 energy monitoring solution using ESP32 and current transformers, extended with a predictive maintenance layer.
+An ESP32 gateway reading a Schneider EM6400NG three-phase energy meter over **Modbus RTU on
+RS485** (9600 baud, 8N1) and publishing **9 electrical parameters every 5 seconds** to Zoho IoT
+Cloud over **MQTT with TLS**.
 
-- **Constraint**: Maximum cost reduction without sacrificing accuracy
-- **Predictive Layer**: AI-based analysis of captured electrical parameters to flag abnormal patterns and predict potential equipment failure ahead of time, with full historical data analytics
-- **Stack**: Embedded C, ESP32, ADC calibration, WiFi, AI-based data analysis
+- Decoded the meter's Modbus holding-register map — voltage, current, active/reactive/apparent power, power factor, frequency; 32 device datapoints configured cloud-side
+- Captive-portal Wi-Fi provisioning so a field installer commissions the device from a phone, no laptop and no reflash; credentials persist in ESP32 NVS
+- Cloud connection secured with an embedded root CA certificate
+- **Stack**: C / C++ (Arduino IDE), ModbusMaster, WiFiManager, Zoho IoT SDK, Preferences / NVS
+
+> **Recruiter note**: a full IoT pipeline, from industrial sensor communication through to secure cloud telemetry. Built during my internship at Zoho on real metering hardware.
 
 ---
 
-## 🛠️ Technical Arsenal
+### 🔬 Ultra-Low-Power 10-bit SAR ADC
+**VLSI Project-I · 180 nm CMOS · Cadence Virtuoso / Spectre · Review-I cleared September 2026**
+
+- Comparative switching-energy study of four capacitive-DAC schemes — conventional, monotonic, Vcm-based and merge-and-split — on a single testbench, benchmarked in normalised CV²ref
+- Literature survey across 20+ IEEE / JSSC papers to select a fabricated **7.6 nW, 1 kS/s** reference design as the baseline
+- Evaluating against INL/DNL, ENOB and the Walden Figure of Merit
+
+---
+
+## 🛠️ Technical Skills
 
 | Domain | Technologies |
 |--------|-------------|
-| **Microcontrollers** | ESP32, STM32, Arduino, Raspberry Pi |
-| **Edge AI & Computer Vision** | PyTorch, Computer Vision, Point Cloud Processing |
-| **Protocols** | Modbus RTU/TCP, MQTT, HTTP/REST, WebSocket, RS485, UART, SPI, I2C |
-| **Languages** | C, C++, Python, JavaScript (Basic) |
-| **Cloud & IoT** | Zoho IoT, AWS IoT Core, Firebase, Node-RED |
-| **Tools** | Git, Docker, Arduino IDE, Keil, STM32CubeIDE |
-| **Testing** | Hardware-in-the-loop testing, CI/CD basics |
+| **Languages** | Python, C, C++, SQL, TypeScript |
+| **Data & Analytics** | Power BI, Advanced Excel (pivot models, weighted scoring matrices), data cleaning and structuring, dashboard design, KPI tracking |
+| **Backend & Databases** | REST API design, Node.js / Express, PostgreSQL, JWT authentication, role-based access control, schema design, indexing, integration testing |
+| **Embedded & IoT** | ESP32 / ESP32-S3, Modbus RTU over RS485, MQTT over TLS, UART / Serial, sensor integration, industrial energy metering, Arduino IDE |
+| **Tools & Methods** | Git & GitHub, Linux, Postman, Cadence Virtuoso / Spectre, process mapping, requirement gathering, technical documentation |
 
 ---
 
 ## 💼 Experience
 
-### **IoT Engineering Intern** — Zoho Corporation
-*2-Month Internship | Energy Monitoring Division*
+### **Digitalisation Intern — Supplier Quality Development** · Daimler India Commercial Vehicles (Daimler Truck AG)
+*June – August 2026 | Oragadam Plant, Chennai*
 
-- Built production-ready ESP32 gateway for industrial energy meters
-- Implemented secure MQTT over TLS with certificate pinning
-- Designed captive portal system for zero-touch device provisioning
-- **Deliverable**: Deployable system reading 9 electrical parameters with real-time Zoho IoT dashboard
+- Tracked a **10-stage real-time data implementation rollout across 107 suppliers**, and built the **Power BI dashboard** the Supplier Quality Development team used to run and report it
+- Designed a **Digital Transformation Priority Checklist** scoring suppliers on 5 criteria mapped to 6 priority tiers, weighting cost and ROI highest based on research into Indian MSME capital constraints
+- Authored a **Supplier Digitalisation Handbook** and presented it at the **Qprime supplier development conclave** to an external supplier audience
+- Converted handwritten supplier submissions into structured datasets; delivered a 5-tab Excel priority-matrix workbook and a supplier-facing HTML scoring tool
 
-### **Supplier Quality & Digitalization Intern** — Daimler India Commercial Vehicles (DICV) — Mercedes-Benz Commercial Vehicles
-*2-Month Internship | Qprime Team — Supplier Quality Management*
+### **IoT Engineering Intern** · Zoho Corporation
+*May – July 2025 | Chennai*
 
-- Worked with real-time supplier data and handled supplier-side quality issues as part of the Qprime team
-- Led a digitalization initiative on the supplier side, identifying opportunities to advance IoT-based data collection and reporting for MSME suppliers
-- Directly engaged and coordinated with external suppliers on quality data and issue resolution, acting as a technical liaison between DICV and supplier organizations
-- Designed a supplier prioritization framework and evaluation toolkit to guide digitalization investment decisions, weighted around mutual OEM–supplier benefit
+- Built an ESP32-based industrial IoT gateway reading a Schneider EM6400NG three-phase energy meter over Modbus RTU on RS485, publishing 9 electrical parameters every 5 seconds to Zoho IoT Cloud over MQTT with TLS
+- Decoded the meter's Modbus holding-register map; configured 32 device datapoints cloud-side
+- Implemented captive-portal Wi-Fi provisioning with credentials persisted in ESP32 NVS
+- Secured the cloud connection with an embedded root CA certificate
 
 ---
 
 ## 🎓 Education
 
-**B.Tech in Computer Science** — Vellore Institute of Technology (VIT)
-- Focus: Embedded Systems, IoT, Real-Time Systems
+**B.Tech, Electronics and Computer Engineering** — Vellore Institute of Technology (VIT), Chennai
+*2023 – 2027 · CGPA 7.91 / 10*
+
+**Relevant coursework**: Data Structures & Algorithms, DBMS, Operating Systems, Computer
+Networks, Object-Oriented Programming, Microcontrollers (8051), VLSI Design, Internet of Things.
+
+Sri Chaitanya Techno School — Class XII: 89% · Class X: 90%
+
+---
+
+## 🏆 Achievement
+
+Authored and presented the **Supplier Digitalisation Handbook** at Daimler Truck's Qprime
+supplier development conclave, 2026.
 
 ---
 
@@ -108,34 +125,34 @@ Designed a sub-₹500 energy monitoring solution using ESP32 and current transfo
 
 ---
 
-## 🏆 What I'm Proud Of
-
-- ✅ **Built and deployed** industrial IoT system at Zoho (not just academic)
-- ✅ **Hands-on with industrial protocols**: Modbus for industrial communication
-- ✅ **Edge AI, in progress**: Conditional diffusion models for 3D perception, currently at the software/training stage
-- ✅ **Cost-conscious engineer**: Optimized hardware designs for Indian market constraints, now extended with predictive maintenance
-- ✅ **Supplier-facing IIoT experience**: Led digitalization strategy and worked directly with suppliers at DICV
-- ✅ **Full-stack embedded**: From bare-metal register programming to cloud dashboards
-
----
-
 ## 📫 Let's Talk
 
-I'm actively seeking roles in **Edge AI Systems**, **Embedded Software/Systems**, **Computer Vision**, and **IoT/IIoT** at companies building real-world hardware.
+Looking for graduate roles starting 2027 — embedded and IoT, core and automotive engineering,
+data and digitalisation, or backend development.
 
-- **Portfolio**: [itzgolly.github.io/Resume](https://itzgolly.github.io/Portfolio/)
-- **LinkedIn**: [www.linkedin.com/in/aarush-jagannathan]
-- **Email**: [aarushjagannathan@gmail.com](aarushjagannathan@gmail.com)
-
-> *"I don't just write code — I make hardware talk to the cloud, safely and in real-time."*
+- **Portfolio**: [itzgolly.github.io/Portfolio](https://itzgolly.github.io/Portfolio/)
+- **LinkedIn**: [aarush-jagannathan](https://www.linkedin.com/in/aarush-jagannathan)
+- **Email**: [aarushjagannathan@gmail.com](mailto:aarushjagannathan@gmail.com)
 
 ---
 
-## 📂 Repository Index
+## 📂 About This Repo
 
-| Repo | What It Is | Stack |
+This repo **is** the portfolio site at
+[itzgolly.github.io/Portfolio](https://itzgolly.github.io/Portfolio/) — plain HTML, CSS and
+vanilla JavaScript, no build step, served straight from GitHub Pages.
+
+| File | What it is |
+|------|-----------|
+| `index.html` | Page content and structure |
+| `style.css` | Navy + gold theme, sampled from the portrait image |
+| `script.js` | Sticky nav, scroll reveal, active-section highlight, education card flips |
+| `profile-hero.jpg` / `profile-about.jpg` | Portrait and desk photos |
+| `Aarush_Jagannathan_Resume.pdf` | Downloadable resume, linked from the hero |
+
+### My other repositories
+
+| Repo | What it is | Stack |
 |------|-----------|-------|
-| `iot-energy-monitor-modbus-mqtt` | Zoho internship project | ESP32, Modbus, MQTT, C++ |
-| `conditional-point-diffusion` | 3D point cloud generation (ongoing, software stage) | PyTorch, Python |
-| `low-cost-energy-meter` | Cost-optimized hardware with predictive maintenance | ESP32, ADC, WiFi, AI Data Analysis |
-| `Resume` | Portfolio website | React, TypeScript, GitHub Pages |
+| [`servicedesk-ai`](https://github.com/ItzGOLLY/servicedesk-ai) | Multi-channel customer support platform, deployed live | TypeScript, Express, PostgreSQL, React |
+| [`Iot-Energy-Monitor`](https://github.com/ItzGOLLY/Iot-Energy-Monitor) | Zoho internship project — industrial energy gateway | ESP32, Modbus RTU, MQTT, C++ |
