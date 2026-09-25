@@ -82,7 +82,7 @@ Cloud over **MQTT with TLS**.
 ## 💼 Experience
 
 ### **Digitalisation Intern — Supplier Quality Development** · Daimler India Commercial Vehicles (Daimler Truck AG)
-*June – August 2026 | Oragadam Plant, Chennai*
+*01 June – 30 July 2026 | Oragadam Plant, Chennai*
 
 - Tracked a **10-stage real-time data implementation rollout across 107 suppliers**, and built the **Power BI dashboard** the Supplier Quality Development team used to run and report it
 - Designed a **Digital Transformation Priority Checklist** scoring suppliers on 5 criteria mapped to 6 priority tiers, weighting cost and ROI highest based on research into Indian MSME capital constraints
@@ -90,7 +90,7 @@ Cloud over **MQTT with TLS**.
 - Converted handwritten supplier submissions into structured datasets; delivered a 5-tab Excel priority-matrix workbook and a supplier-facing HTML scoring tool
 
 ### **IoT Engineering Intern** · Zoho Corporation
-*May – July 2025 | Chennai*
+*22 May – 20 June 2025 | Chennai*
 
 - Built an ESP32-based industrial IoT gateway reading a Schneider EM6400NG three-phase energy meter over Modbus RTU on RS485, publishing 9 electrical parameters every 5 seconds to Zoho IoT Cloud over MQTT with TLS
 - Decoded the meter's Modbus holding-register map; configured 32 device datapoints cloud-side
